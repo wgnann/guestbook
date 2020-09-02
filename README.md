@@ -22,6 +22,18 @@ Versão tl;dr:
 ## fluxo distribuído
 Outra possibilidade é cada um ter sua cópia local do repositório e eventualmente compartilhar algumas das alterações. Para copiar o repositório, basta usar o botão **Fork**. Isso criará uma cópia do repositório no seu usuário do Git.
 
-Depois, basta seguir com o seu repositório forkado como se fosse seu. Depois do `git push`, existirá a possibilidade de fazer um **pull request**, que é propagar suas alterações para o repositório original.
+Depois, basta seguir com o seu repositório forkado. Depois do `git push`, existirá a possibilidade de fazer um **pull request**, que é propagar suas alterações para o repositório original.
 
 Os responsáveis pelo repositório original receberão a notificação e avaliarão sua contribuição.
+
+Outra possibilidade é aplicar as atualizações do repositório original. Será necessário adicionar o upstream `git remote add upstream <repo oficial>`.
+
+Depois, baixar o upstream para o computador: `git fetch upstream`. Garantir que você está no branch correto. Por ora, usamos o **master**: `git checkout master`. Daí, aplicar as atualizações: `git merge upstream/master`.
+
+Por fim, propagar as alterações para seu repositório remoto: `git push`. Note que o `git merge` aplica as atualizações, verifica por eventuais colisões entre o que você mudou e o que foi mudado no upstream e, se não houver problemas, já commita.
+
+Versão tl;dr:
+ * `git fetch upstream`;
+ * `git checkout master`;
+ * `git merge upstream/master`;
+ * `git push`.
