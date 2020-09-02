@@ -18,3 +18,10 @@ Versão tl;dr:
  * `git add`;
  * `git commmit`;
  * `git push`.
+
+## fluxo distribuído
+Outra possibilidade é cada um ter sua cópia local do repositório e eventualmente compartilhar algumas das alterações. Para copiar o repositório, basta usar o botão **Fork**. Isso criará uma cópia do repositório no seu usuário do Git.
+
+Depois, basta seguir com o seu repositório forkado como se fosse seu. Depois do `git push`, existirá a possibilidade de fazer um **pull request**, que é propagar suas alterações para o repositório original.
+
+Os responsáveis pelo repositório original receberão a notificação e avaliarão sua contribuição.
